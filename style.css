@@ -64,6 +64,10 @@ body {
     cursor: pointer;
 }
 
+.accordion_item_open_button {
+    cursor: pointer;
+}
+
 .accordion_item_body {
     color: #8B6990;
     font-size: 0.875rem;
@@ -78,4 +82,38 @@ body {
     max-height: none;
     overflow: hidden;
     margin-top: 1.5em;
+}
+
+/* Responsiveness */
+
+@media screen and (min-width: 23.5em) {
+    body {
+        background-image: url(./assets/images/background-pattern-desktop.svg);
+        background-position: center top;
+    }
+
+    .accordion {
+        border-radius: 16px;
+        gap: 2em;
+        max-width: 600px;
+        padding: 2.5em;
+    }
+
+    .accordion_item_header {
+        font-size: 1.125rem;
+    }
+
+    .accordion_item_header:hover {
+        color: #AD28EB;
+    }
+
+    .accordion_item_body {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 90.0625em) { 
+    body {
+        background-image: none;
+    }
 }
