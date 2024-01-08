@@ -5,20 +5,16 @@ body {
     background-color: #f8eeff;
     background-image: url(./assets/images/background-pattern-mobile.svg);
     background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
     font-family: 'Work Sans', sans-serif;
     font-size: 1rem;
-    height: 100vh;
-    padding: 0 1.5em;
-    justify-content: center;
+    min-height: 100vh;
+    padding: 8em 1.5em 2em;
 }
 
 /* Shared */
 
 .accordion_title_box,
-.accordion_item_header_box,
-.accordion_item {
+.accordion_item_header_box {
     display: flex;
     gap: 1.5em;
 }
@@ -27,7 +23,6 @@ body {
 /* Specific */
 
 .accordion {
-    /* align-self: stretch; */
     background: #fff;
     border-radius: 8px;
     box-shadow: 0px 32px 56px 0px rgba(80, 0, 118, 0.10);
@@ -35,12 +30,16 @@ body {
     flex-direction: column;
     gap: 1.5em;
     padding: 1.5em;
+    margin: 0 auto;
 }
 
 .accordion_item {
+    border-top: 2px solid #F8EEFF;    
+    display: flex;
     flex-direction: column;
-    border-top: 2px solid #F8EEFF;
     padding-top: 1.5em;
+    overflow: hidden;
+
 }
 
 .accordion_item:nth-child(2) {
@@ -62,7 +61,7 @@ body {
 .accordion_item_header {
     color: #301534;
     font-weight: 600;
-
+    cursor: pointer;
 }
 
 .accordion_item_body {
@@ -72,9 +71,11 @@ body {
     line-height: 1.5;
     max-height: 0;
     overflow: hidden;
+
 }
 
 .open {
     max-height: none;
     overflow: hidden;
+    margin-top: 1.5em;
 }
