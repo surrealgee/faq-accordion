@@ -17,7 +17,7 @@ body {
 /* Shared */
 
 .accordion_title_box,
-.item_header_box,
+.accordion_item_header_box,
 .accordion_item {
     display: flex;
     gap: 1.5em;
@@ -55,11 +55,11 @@ body {
     font-weight: 700;
 }
 
-.item_header_box {
+.accordion_item_header_box {
     justify-content: space-between;
 }
 
-.item_header {
+.accordion_item_header {
     color: #301534;
     font-weight: 600;
 
